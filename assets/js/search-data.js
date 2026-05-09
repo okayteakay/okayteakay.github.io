@@ -59,7 +59,7 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "news-pubtables-v2-is-now-public-on-arxiv-a-large-scale-dataset-for-full-page-and-multi-page-table-extraction-update-this-date-to-the-actual-arxiv-submission-date",
+      },{id: "news-pubtables-v2-is-now-public-on-arxiv-a-large-scale-dataset-for-full-page-and-multi-page-table-extraction",
           title: 'PubTables-v2 is now public on arXiv — a large-scale dataset for full-page and...',
           description: "",
           section: "News",},{id: "news-won-2nd-place-at-the-ruthai-x-hearst-lab-hackathon-in-new-york-sparkles",
