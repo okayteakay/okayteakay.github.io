@@ -7,11 +7,9 @@ subtitle: Machine Learning Engineer at <a href='https://kensho.com'>Kensho Techn
 profile:
   align: right
   image: prof_pic.png
-  image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>New York, NY</p>
+  image_circular: false # crops the image to make it circular
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -32,3 +30,7 @@ I completed my MS in Data Science at [NYU](https://cds.nyu.edu/) in 2024. While 
 My research and engineering interests sit at the intersection of **retrieval-augmented generation, document understanding, evaluation methodology for LLM agents, and applied ML for social impact**. I've published on table extraction, lightweight models for IoT, and ML for public-health and energy applications.
 
 Outside of work, I mentor and teach as part of [GSTEM at NYU](https://wp.nyu.edu/gstem/) — a summer research program for high-school girls in STEM.
+
+## Research Interests
+
+*Coming soon — I'll fill this in shortly.*
