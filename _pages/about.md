@@ -23,13 +23,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a Machine Learning Engineer at [Kensho Technologies](https://kensho.com) (S&P Global) in New York, where I work on document understanding and LLM-powered systems for financial research. I build statistical evaluation frameworks for RAG agents, production ML pipelines for document extraction, and the retrieval and prompt orchestration stacks behind tools that serve financial analysts.
+I'm a Machine Learning Engineer at [Kensho Technologies](https://kensho.com) (S&P Global), where I build retrieval-augmented generation (RAG) agents and their evaluation frameworks over S&P's unstructured financial datasets — accelerating AI-driven research for analysts and investment professionals. I'm also investigating LLM judge calibration for document quality rating, using item response theory to align multi-model jury ratings with human judgments. Previously on Kensho's Document Intelligence team, I productionized ML models for document understanding, improved figure and chart parsing in production pipelines, and co-authored a large-scale table extraction dataset submitted to ECCV 2026.
 
-I completed my MS in Data Science at [NYU](https://cds.nyu.edu/) in 2024. While there, I worked on multi-modal pipelines and fine-tuning LLMs for long legal-document understanding (Columbia capstone) and on neural and behavioral models of music perception at the [FOX Lab](https://www.foxlabnyu.com/). Before NYU, I earned a B.Tech in Electrical Engineering from Aligarh Muslim University.
+I hold an M.S. in Data Science from [NYU's Center for Data Science](https://cds.nyu.edu/) and a B.Tech in Electrical Engineering from Aligarh Muslim University, India.
 
-My research and engineering interests sit at the intersection of **retrieval-augmented generation, document understanding, evaluation methodology for LLM agents, and applied ML for social impact**. I've published on table extraction, lightweight models for IoT, and ML for public-health and energy applications.
-
-Outside of work, I mentor and teach as part of [GSTEM at NYU](https://wp.nyu.edu/gstem/) — a summer research program for high-school girls in STEM.
+Beyond my professional work, I'm passionate about making STEM accessible to the next generation. I served as a research mentor and teaching assistant for [NYU's GSTEM program](https://wp.nyu.edu/gstem/) (2024–2025), guiding high school girls through hands-on data science research projects — from experimental design to scientific communication.
 
 ## Research Interests
 
