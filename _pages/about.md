@@ -23,9 +23,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a Machine Learning Engineer at [Kensho Technologies](https://kensho.com) (S&P Global), where I build retrieval-augmented generation (RAG) agents and their evaluation frameworks over S&P's unstructured financial datasets — accelerating AI-driven research for analysts and investment professionals. I'm also investigating LLM judge calibration for document quality rating, using item response theory to align multi-model jury ratings with human judgments. Previously on Kensho's Document Intelligence team, I productionized ML models for document understanding, improved figure and chart parsing in production pipelines, and co-authored a large-scale table extraction dataset submitted to ECCV 2026.
+I'm a Machine Learning Engineer at [Kensho Technologies](https://kensho.com) (S&P Global), where I build unstructured data retrieval agents and their evaluation frameworks over S&P's rich financial datasets — accelerating AI-driven research for analysts and investment professionals. I'm also investigating LLM judge calibration for document quality rating, using item response theory to align multi-model jury ratings with human judgments. Previously on Kensho's Document Intelligence team, I productionized ML models for document understanding, improved figure and chart parsing in production pipelines, and co-authored a large-scale table extraction dataset submitted to ECCV 2026.
 
-I hold an M.S. in Data Science from [NYU's Center for Data Science](https://cds.nyu.edu/) and a B.Tech in Electrical Engineering from Aligarh Muslim University, India.
+I hold an M.S. in Data Science from [NYU's Center for Data Science](https://cds.nyu.edu/) and a B.Tech in Electrical Engineering from AMU, India.
 
 Beyond my professional work, I'm passionate about making STEM accessible to the next generation. I served as a research mentor and teaching assistant for [NYU's GSTEM program](https://wp.nyu.edu/gstem/) (2024–2025), guiding high school girls through hands-on data science research projects — from experimental design to scientific communication.
 
