@@ -2,16 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Machine Learning Engineer at <a href='https://kensho.com'>Kensho Technologies</a>, S&P Global.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>New York, NY</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +20,15 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Machine Learning Engineer at [Kensho Technologies](https://kensho.com) (S&P Global) in New York, where I work on document understanding and LLM-powered systems for financial research. I build statistical evaluation frameworks for RAG agents, production ML pipelines for document extraction, and the retrieval and prompt orchestration stacks behind tools that serve financial analysts.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I completed my MS in Data Science at [NYU](https://cds.nyu.edu/) in 2024. While there, I worked on multi-modal pipelines and fine-tuning LLMs for long legal-document understanding (Columbia capstone) and on neural and behavioral models of music perception at the [FOX Lab](https://www.foxlabnyu.com/). Before NYU, I earned a B.Tech in Electrical Engineering from Aligarh Muslim University.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research and engineering interests sit at the intersection of **retrieval-augmented generation, document understanding, evaluation methodology for LLM agents, and applied ML for social impact**. I've published on table extraction, lightweight models for IoT, and ML for public-health and energy applications.
+
+Outside of work, I mentor and teach as part of [GSTEM at NYU](https://wp.nyu.edu/gstem/) — a summer research program for high-school girls in STEM.

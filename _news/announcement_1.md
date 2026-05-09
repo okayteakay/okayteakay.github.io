@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-04-15 12:00:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Won 2nd place at the **RutHai x Hearst Lab Hackathon** in New York! :sparkles:
