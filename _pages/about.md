@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Machine Learning Engineer at <a href='https://kensho.com'>Kensho Technologies</a>, S&P Global.
+subtitle: Machine Learning Engineer at <a href='https://kensho.com'>Kensho Technologies</a>, <a href='https://www.spglobal.com/'>S&amp;P Global</a>.
 
 profile:
   align: right
@@ -29,9 +29,9 @@ I hold an Masters in in Data Science from [NYU's Center for Data Science](https:
 
 Beyond my professional work, I'm passionate about making STEM accessible to the next generation. I served as a research mentor and teaching assistant for [NYU's GSTEM program](https://wp.nyu.edu/gstem/) (2024–2025), guiding high school girls through physics & data science research projects.
 
-## Research Areas
+## Research 
 
-A central focus of my current research is language model evaluation — how to trust evaluation of RAG retrieval and generation without ground-truth labels.
+A central focus of my current research is reliable text quality measurement with LLMs when ground truth is unavailable.
 
-At Kensho, I work on LLM-as-a-judge evaluation for RAG agents over financial documents. LLM judges carry their own well-documented biases and confabulate under sparse evidence; at the scale and specificity of finance, no labeled reference exists to anchor them.. The open questions: how to measure quality without references, correct known judge biases, and align the judge with what analysts actually weigh on.
-                                                                                                                            A closely related thread, with the R&D team at Kensho: calibrating LLM-jury ratings against human ratings for document text quality. Raters differ systematically in strictness and reliability, so averaging entangles their biases with the quality signal. The question: how do we aggregate a panel whose biases are known? 
+At Kensho, I work on LLM jury & judge evaluation for RAG agents over financial documents. The focus: how to evaluate RAG outputs reliably across runs, account for LLM biases and hallucinations, and align the judge with what analysts actually weigh with no labels present.
+                                                                                                                           A closely related thread, with the R&D team at Kensho:  calibrating LLM-jury ratings against human ratings for document text quality. Raters differ systematically in strictness and reliability, so averaging entangles bias with signal. The question: how to aggregate a panel whose biases are known?   
