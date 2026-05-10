@@ -66,23 +66,23 @@ ninja.data = [{
           title: 'Won 2nd place at the RutHai x Hearst Lab Hackathon in New York!...',
           description: "",
           section: "News",},{id: "projects-enerme",
-          title: 'enerME',
-          description: "Coming soon — content to be added.",
+          title: 'EnerMe',
+          description: "🏆 2nd place, RutHAI x Hearst Lab Hackathon 2026 — an AI-powered energy assistant for everyday households.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_enerme/";
             },},{id: "projects-nocept",
           title: 'nocept',
-          description: "Coming soon — content to be added.",
+          description: "An autonomous invoice-exception resolution system built as a multi-step AI workflow.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_nocept/";
-            },},{id: "projects-navigating-misleading-context-in-retrieval-augmented-generation",
-          title: 'Navigating Misleading Context in Retrieval-Augmented Generation',
-          description: "Coming soon — content to be added.",
+            },},{id: "projects-navigating-misleading-context-in-rag",
+          title: 'Navigating Misleading Context in RAG',
+          description: "An adversarial-context probe of GPT models on QA — how robust are RAG systems when the retrieved passage is wrong on purpose?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_navmrag/";
-            },},{id: "projects-ey-open-science-data-challenge",
-          title: 'EY Open Science Data Challenge',
-          description: "Ranked 20th globally — Fire Mapping from Satellite Imagery. Content coming soon.",
+            },},{id: "projects-ey-better-working-world-data-challenge",
+          title: 'EY Better Working World Data Challenge',
+          description: "🌍 Ranked 20th globally — bushfire mapping from satellite and line-scan imagery for the Australian Country Fire Authority.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_ey_data_challenge/";
             },},{
