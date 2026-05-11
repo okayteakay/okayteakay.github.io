@@ -1,44 +1,25 @@
 ---
 layout: page
-title: EnerMe
-description: 🏆 2nd place, RuthAI x Hearst Lab Hackathon 2026 — an AI-powered energy assistant for everyday households.
+title: enerME
+description: Household energy intelligence dashboard — 2nd place at the RuthAI x Hearst Lab Hackathon, NYC.
 importance: 1
 category: work
 ---
 
 *📅 April 2026*
 
-> **🏆 2nd place** at the [RuthAI x Hearst Lab Hackathon](https://ruthai.org/) in New York City — built in just **6 hours** under the theme *AI for Social Good*.
->
-> 🐙 **Code on GitHub:** [evapisk/enerME](https://github.com/evapisk/enerME)
+enerME is a household energy intelligence dashboard built at the RuthAI x Hearst Lab Hackathon in NYC — 2nd place out of 25 finalists selected from 150+ applicants. [Live demo](https://enerme.vercel.app) · [GitHub](https://github.com/evapisk/enerME).
 
-## The problem
+Residential electricity contributes roughly 20% of US end-use energy demand, but the consumer-facing layer has barely evolved since paper bills. Smart-meter data is collected, then rarely surfaced as actionable feedback. Most modeling in this space optimizes for grid operators, not the households whose behavior actually drives consumption — leaving an underserved decision-support layer at the point of usage.
 
-Most households have no idea where their electricity is going. Bills arrive once a month, anomalies go unnoticed, and "save energy" advice rarely tells you *what* to actually do. We wanted to change that — turning raw smart-meter data into something a normal person can read, trust, and act on.
+The system ingests minute-level readings from the UCI Household Electric Power Consumption dataset (~2M rows, 2006–2010) via a Supabase Postgres backend, resamples to hourly resolution, and surfaces three layers through a FastAPI + React/TypeScript application.
 
-## What we built
+Spike detection runs over a rolling 24-hour baseline with appliance-channel attribution recovered from sub-metering deltas at the event timestamp.
 
-**EnerMe** is a full-stack AI assistant that ingests household electricity time-series data and answers three questions:
+Forecasting uses Prophet on the hourly series — 7-day-ahead point forecasts with native uncertainty intervals, cached with a 24-hour TTL. Dominant-load attribution is computed per forecast hour by weighting the predicted total against historical sub-metering shares.
 
-1. **What's normal for me?** — Hourly usage features and rolling statistical baselines establish each home's individual consumption fingerprint.
-2. **What just went wrong?** — Spike detection flags abnormal usage, then maps high-usage periods to appliance-level sub-metering signals so anomalies come with a *cause*, not just a chart.
-3. **What's coming next?** — A Prophet-based forecasting layer captures daily and weekly seasonality and produces 7-day demand predictions with uncertainty bounds, all backed by a cache layer to keep latency low.
+LLM-based recommendations sit on top of the detection pipeline using the OpenAI Responses API with structured outputs. A Pydantic schema constrains the model output (ranked actions, urgency, evidence trail, confidence score), and the system prompt restricts generation to the provided JSON evidence — preventing fabricated appliance claims. Confidence and evidence fields propagate to the UI for thresholded surfacing.
 
-The intelligence layer is where it gets fun: an **OpenAI API integration with Pydantic-structured outputs** turns each anomaly into a plain-English recommendation — confidence score, supporting evidence, urgency level, and a concrete next step. No vague advice, no hallucinated numbers.
+The architecture generalizes from individual households to utility-scale demand response, smart-home platforms, and energy efficiency programs — anywhere raw smart-meter data needs to become a calibrated, auditable decision-support signal.
 
-Everything surfaces through a snappy **React + TypeScript dashboard** with KPI tracking, real-time alerts, appliance insights, and interactive forecast visualizations.
-
-## Why it matters
-
-EnerMe is a working argument that AI doesn't have to be a chatbot to be useful. Done right, it becomes a **decision-support layer** — one that helps households save money, utilities reduce peak load, and sustainability programs deliver measurable behavior change. The same architecture extends naturally to smart-home platforms, building management, and grid-level demand response.
-
-## Tech stack
-
-| Layer | Tools |
-|---|---|
-| Backend | FastAPI, Python |
-| Data & ML | Pandas, NumPy, Prophet |
-| Storage | Supabase |
-| AI / Reasoning | OpenAI API, Pydantic structured outputs |
-| Frontend | React, TypeScript |
-
+Tech stack: FastAPI, Prophet, Supabase, OpenAI Responses API + Pydantic, React/TypeScript, Vercel/Railway.

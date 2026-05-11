@@ -1,42 +1,21 @@
 ---
 layout: page
 title: Navigating Misleading Context in RAG
-description: An adversarial-context probe of GPT models on QA — how robust are RAG systems when the retrieved passage is wrong on purpose?
+description: An empirical probe of GPT robustness under deliberately misleading retrieval contexts on SQuAD.
 importance: 3
 category: work
 ---
 
 *📅 February 2024*
 
-> 🐙 **Code on GitHub:** [okayteakay/Navigating-Misleading-Context-in-Retrieval-Augmented-Generation-](https://github.com/okayteakay/Navigating-Misleading-Context-in-Retrieval-Augmented-Generation-)
+Navigating Misleading Context in RAG — an empirical probe of GPT robustness to deliberately misleading retrieval context on a SQuAD multiple-choice benchmark. [GitHub](https://github.com/okayteakay/Navigating-Misleading-Context-in-Retrieval-Augmented-Generation-).
 
-## The question
+Retrieval-augmented generation is built on a quiet assumption: that the retrieved passage is helpful. Real-world retrievers don't satisfy that assumption — they surface stale documents, near-duplicates from the wrong domain, and adversarial content from open-web sources. Production RAG systems need to know when to trust their context and when to defer to model priors, but the failure mode rarely gets isolated experimentally.
 
-Retrieval-augmented generation (RAG) is built on a quiet assumption: *the retrieved context is helpful*. But what happens when it isn't? When the retriever returns a passage that's plausible but wrong, does the language model dutifully follow the bad context — or does it push back?
+The benchmark is layered over SQuAD: 1000 multiple-choice questions, each instantiated under three context regimes — relevant (the original gold passage), irrelevant (a misleading passage drawn from a different SQuAD question, syntactically plausible but semantically wrong), and no-context (closed-book). For each regime, three prompting strategies are evaluated: zero-shot, few-shot with reasoning exemplars, and chain-of-thought. Each prediction is parsed into a structured JSON output (answer letter, answer name, explanation) and matched against the gold answer.
 
-This project is an empirical probe of that failure mode.
+The headline result, from the few-shot regime: relevant context yielded 93.7% accuracy, irrelevant context dropped it to 52.2%, and no-context landed at 56.4%. The non-obvious finding is the gap between irrelevant and no-context — a misleading retrieval is empirically worse than retrieving nothing at all. The model anchors to the provided passage even when its priors would have produced a better answer, a failure mode that accuracy-on-clean-retrieval benchmarks never surface.
 
-## The approach
+The operational implication for production RAG: retrieval quality gating matters more than retrieval recall. A confidence-aware retriever that abstains under low context-relevance can outperform one that always returns something, because bad context actively harms the downstream answer rather than merely being unhelpful.
 
-I built an **adversarial context task-completion benchmark** layered on top of the SQuAD question-answering dataset. For each question, the original gold passage is replaced or perturbed with a misleading variant — same surface form, different (and incorrect) semantic content — and a GPT model is asked to answer.
-
-To isolate the effect of *prompting strategy* on robustness, the same questions are evaluated under three regimes:
-
-- **Zero-shot** — direct prompting with no examples
-- **Few-shot** — in-context examples of correct reasoning under noisy context
-- **Chain-of-Thought** — step-by-step reasoning before the final answer
-
-The contrast across these regimes reveals which prompting techniques actually buy *adversarial robustness* versus which merely improve average-case accuracy.
-
-## Why it matters
-
-Real-world retrievers are imperfect. They surface stale documents, near-duplicates from the wrong domain, and adversarial content from open-web sources. Production RAG systems — including the kind I work on professionally — need to know **when to trust their context and when to defer to model priors**. This project formalizes that question and offers a reproducible way to measure it.
-
-## Tech stack
-
-| Layer | Tools |
-|---|---|
-| Models | OpenAI GPT models |
-| Dataset | SQuAD (Stanford Question Answering Dataset) |
-| Methodology | Adversarial / misleading context construction; Zero-shot, Few-shot, and Chain-of-Thought prompting |
-| Implementation | Python, Jupyter notebooks |
+Tech stack: OpenAI GPT, SQuAD v1, Python, Jupyter.
