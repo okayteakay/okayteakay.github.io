@@ -7,19 +7,17 @@ nav: true
 nav_order: 6
 ---
 
-I've supported teaching across **NYU Courant**, **NYU CDS**, and **NYU Grossman School of Medicine** in the following roles.
+I've supported teaching across [NYU Courant](https://cims.nyu.edu/) and [NYU Grossman School of Medicine](https://med.nyu.edu/) in the following roles.
 
 ### NYU Grossman School of Medicine
+- Deep Learning for Medicine — Spring 2023
+- Machine Learning for Medicine — Fall 2022
 
-- **Deep Learning for Medicine** — Spring 2023
-- **Machine Learning for Medicine** — Fall 2022
+### NYU Courant Institute of Mathematical Sciences (now includes NYU Center for Data Science)
 
-### NYU Center for Data Science (CDS)
+- Principles of Data Science — Spring 2023, Fall 2023, Spring 2024
+- Data Analytics and Visualization in Healthcare — Fall 2023
 
-- **Principles of Data Science** — Spring 2023, Fall 2023, Spring 2024
+### GSTEM
 
-### NYU Courant Institute of Mathematical Sciences
-
-- **GSTEM Data Science Class** — Spring 2024, Spring 2025
-- **GSTEM Summer Research Program** — Summer 2023, Summer 2024
-- **Data Analytics and Visualization in Healthcare** — Fall 2023
+Through NYU's [GSTEM program](https://wp.nyu.edu/gstem/) (2023–2025), I taught and mentored high school girls in Python, statistics, and hands-on physics & data science research projects. Across two spring semesters and two summer cohorts, I supported students through their first real coding work, statistical analyses, and research presentations — one of the most rewarding parts of my time at NYU.
