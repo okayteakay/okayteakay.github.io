@@ -1,14 +1,14 @@
 ---
 layout: page
 title: EnerMe
-description: 🏆 2nd place, RutHAI x Hearst Lab Hackathon 2026 — an AI-powered energy assistant for everyday households.
+description: 🏆 2nd place, RuthAI x Hearst Lab Hackathon 2026 — an AI-powered energy assistant for everyday households.
 importance: 1
 category: work
 ---
 
 *📅 April 2026*
 
-> **🏆 2nd place** at the [RutHAI x Hearst Lab Hackathon](https://ruthai.org/) in New York City — built in just **6 hours** under the theme *AI for Social Good*.
+> **🏆 2nd place** at the [RuthAI x Hearst Lab Hackathon](https://ruthai.org/) in New York City — built in just **6 hours** under the theme *AI for Social Good*.
 >
 > 🐙 **Code on GitHub:** [evapisk/enerME](https://github.com/evapisk/enerME)
 

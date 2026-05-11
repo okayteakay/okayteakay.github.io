@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Won 2nd place at the **RutHai x Hearst Lab Hackathon** in New York! :sparkles:
+Won 2nd place at the **RuthAI x Hearst Lab Hackathon** in New York! :sparkles:
