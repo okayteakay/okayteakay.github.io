@@ -27,7 +27,7 @@ At Kensho, I build unstructured data retrieval agents and their evaluation frame
 
 Previous to Kensho, I graduated with a Masters in in Data Science from [NYU's Center for Data Science](https://cds.nyu.edu/) (May 2024) and a Bachelors of Technoogy degree in Electrical Engineering from AMU, India (May 2022).
 
-Beyond my professional work, I’m passionate about making STEM accessible to the next generation. I served as a research mentor for NYU’s [GSTEM](https://wp.nyu.edu/gstem/) program (2023–2025), mentoring high school girls through research projects.
+One of my most rewarding experiences has been serving as a research mentor for NYU's [GSTEM](https://wp.nyu.edu/gstem/) program (2023–2025), guiding high school girls through hands-on research projects. It's something I'm deeply passionate about — making STEM accessible to the next generation.
 
 ## Research 
 
