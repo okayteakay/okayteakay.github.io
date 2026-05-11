@@ -23,15 +23,17 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-At Kensho, I build unstructured data retrieval agents and their evaluation frameworks over S & P Global's rich financial datasets — accelerating AI-driven research for analysts and investment professionals. Previously on Kensho's Document Intelligence team, I productionized ML models for document understanding, improved figure and chart parsing in production pipelines, and co-authored a large-scale table extraction dataset submitted to ECCV 2026.
+At Kensho, I build unstructured data retrieval agents and their evaluation frameworks over S&P Global's rich financial datasets — accelerating AI-driven research for analysts and investment professionals. Previously on Kensho's Document Intelligence team, I productionized ML models & improved figure parsing for [Kensho Extract](https://kensho.com/extract) in production pipelines. Recently the team co-authored a large-scale table extraction dataset paper Pubtables-v2 submitted to ECCV 2026.
 
-I hold an Masters in in Data Science from [NYU's Center for Data Science](https://cds.nyu.edu/) and a Bachelors of Technoogy degree in Electrical Engineering from AMU, India.
+Previous to Kensho, I graduated with a Masters in in Data Science from [NYU's Center for Data Science](https://cds.nyu.edu/) (May 2024) and a Bachelors of Technoogy degree in Electrical Engineering from AMU, India (May 2022).
 
-Beyond my professional work, I'm passionate about making STEM accessible to the next generation. I served as a research mentor and teaching assistant for [NYU's GSTEM program](https://wp.nyu.edu/gstem/) (2024–2025), guiding high school girls through physics & data science research projects.
+Beyond my professional work, I’m passionate about making STEM accessible to the next generation. I served as a research mentor for NYU’s [GSTEM](https://wp.nyu.edu/gstem/) program (2023–2025), mentoring high school girls through research projects.
 
 ## Research 
 
 A central focus of my current research is reliable text quality measurement with LLMs when ground truth is unavailable.
 
-At Kensho, I work on LLM jury & judge evaluation for RAG agents over financial documents. The focus: how to evaluate RAG outputs reliably across runs, account for LLM biases and hallucinations, and align the judge with what analysts actually weigh with no labels present.
-                                                                                                                           A closely related thread, with the R&D team at Kensho:  calibrating LLM-jury ratings against human ratings for document text quality. Raters differ systematically in strictness and reliability, so averaging entangles bias with signal. The question: how to aggregate a panel whose biases are known?   
+I work on LLM jury & judge evaluation for RAG agents over financial documents. My focus is establishing reliable, reproducible LLM-judge evaluation of RAG outputs — quantifying and mitigating known judge biases and confabulation under sparse evidence, and aligning judge criteria with the dimensions that actually matter.                        
+
+A closely related thread, with the R&D team I am investigating calibrating LLM-jury ratings against human ratings for document text quality. Raters differ systematically in strictness and reliability, so averaging entangles bias with signal. The question: how to aggregate a panel whose biases are known?   
+
